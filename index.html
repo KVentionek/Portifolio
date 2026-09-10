@@ -1,266 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kelly Vencionek | Software Developer</title>
+    <title>Kelly Vencionek | Desenvolvedora</title>
 
-    <meta 
-        name="description" 
-        content="Portfólio de Kelly Vencionek, desenvolvedora de software com experiência em Delphi, SQL, Python, C# e JavaScript."
-    >
+    <meta name="description"
+        content="Portfólio de Kelly Vencionek, desenvolvedora de software com experiência em Delphi, C#, Python, SQL e desenvolvimento de sistemas.">
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- CABEÇALHO -->
+    <!-- ================= NAVBAR ================= -->
 
-    <header>
-        <nav class="navbar">
+    <header class="navbar">
 
-            <a href="#inicio" class="logo">
-                Kelly<span>.</span>
-            </a>
+        <a href="#inicio" class="logo">
+            <span>&lt;</span> Kelly <span>/&gt;</span>
+        </a>
 
-            <ul class="nav-links">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#tecnologias">Tecnologias</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+        <nav id="nav-menu">
 
-            <button id="menu-button" class="menu-button">
-                ☰
-            </button>
+            <a href="#inicio">Início</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#tecnologias">Tecnologias</a>
+            <a href="#formacao">Formação</a>
+            <a href="#contato">Contato</a>
 
         </nav>
+
+        <button class="menu-button" id="menu-button">
+            ☰
+        </button>
+
     </header>
 
 
+    <!-- ================= HERO ================= -->
+
     <main>
 
-        <!-- INÍCIO -->
+        <section class="hero" id="inicio">
 
-        <section id="inicio" class="hero">
+            <div class="hero-background"></div>
 
             <div class="hero-content">
 
-                <p class="hero-subtitle">
-                    Olá, eu sou
+                <p class="hero-small">
+                    Olá, eu sou a Kelly 👋
                 </p>
 
                 <h1>
-                    Kelly Vencionek
+                    Transformando ideias em
+                    <span>soluções digitais.</span>
                 </h1>
 
-                <h2>
-                    Software Developer
-                </h2>
-
                 <p class="hero-description">
-                    Desenvolvedora de software com experiência em Delphi,
-                    SQL e desenvolvimento de aplicações. Atualmente ampliando
-                    meus conhecimentos em Python, C#, dados e cibersegurança.
+                    Desenvolvedora de software apaixonada por tecnologia,
+                    dados e resolução de problemas.
                 </p>
 
                 <div class="hero-buttons">
 
                     <a href="#projetos" class="button primary">
-                        Ver projetos
+                        Ver meus projetos
                     </a>
 
-                    <a 
-                        href="https://github.com/SEU_USUARIO"
-                        target="_blank"
-                        class="button secondary"
-                    >
-                        GitHub
-                    </a>
-
-                    <a 
-                        href="https://www.linkedin.com/in/SEU_USUARIO/"
-                        target="_blank"
-                        class="button secondary"
-                    >
-                        LinkedIn
+                    <a href="#contato" class="button secondary">
+                        Entre em contato
                     </a>
 
                 </div>
 
             </div>
 
-            <div class="hero-code">
+            <div class="hero-decoration decoration-one"></div>
+            <div class="hero-decoration decoration-two"></div>
 
-                <div class="code-window">
-
-                    <div class="code-header">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                    <pre><code>
-const developer = {
-    name: "Kelly",
-    role: "Software Developer",
-    languages: [
-        "Delphi",
-        "Python",
-        "C#",
-        "JavaScript",
-        "SQL"
-    ],
-    learning: [
-        "Cybersecurity",
-        ".NET",
-        "Data"
-    ]
-};
-                    </code></pre>
-
-                </div>
-
+            <div class="scroll-indicator">
+                <span></span>
+                role para explorar
             </div>
 
         </section>
 
 
-        <!-- SOBRE -->
+        <!-- ================= PROJETOS ================= -->
 
-        <section id="sobre" class="section">
+        <section class="projects section" id="projetos">
 
-            <div class="section-title">
-                <span>01.</span>
-                <h2>Sobre mim</h2>
-            </div>
+            <div class="section-header">
 
-            <div class="about-content">
+                <p class="section-label">
+                    PORTFÓLIO
+                </p>
 
-                <div>
+                <h2>
+                    Projetos em <span>destaque</span>
+                </h2>
 
-                    <p>
-                        Sou desenvolvedora de software com formação em
-                        Análise e Desenvolvimento de Sistemas e experiência
-                        profissional no desenvolvimento de sistemas.
-                    </p>
-
-                    <p>
-                        Atualmente trabalho principalmente com Delphi,
-                        desenvolvimento de aplicações desktop, APIs,
-                        banco de dados SQL Server e manutenção de sistemas.
-                    </p>
-
-                    <p>
-                        Paralelamente, venho expandindo minha área de atuação
-                        através de estudos em Python, SQL, C#, desenvolvimento
-                        web, análise de dados e cibersegurança.
-                    </p>
-
-                    <p>
-                        Meu objetivo é continuar evoluindo como profissional
-                        de tecnologia e construir soluções cada vez mais
-                        completas, seguras e eficientes.
-                    </p>
-
-                </div>
-
-                <div class="about-highlight">
-
-                    <div>
-                        <strong>ADS</strong>
-                        <span>Formação</span>
-                    </div>
-
-                    <div>
-                        <strong>Delphi</strong>
-                        <span>Experiência profissional</span>
-                    </div>
-
-                    <div>
-                        <strong>Python</strong>
-                        <span>Em desenvolvimento</span>
-                    </div>
-
-                    <div>
-                        <strong>Cyber</strong>
-                        <span>Área de estudo</span>
-                    </div>
-
-                </div>
+                <p>
+                    Alguns dos projetos que desenvolvi durante minha
+                    trajetória profissional e acadêmica.
+                </p>
 
             </div>
-
-        </section>
-
-
-        <!-- TECNOLOGIAS -->
-
-        <section id="tecnologias" class="section">
-
-            <div class="section-title">
-                <span>02.</span>
-                <h2>Tecnologias</h2>
-            </div>
-
-            <p class="section-description">
-                Algumas das tecnologias e ferramentas com as quais
-                trabalho ou venho desenvolvendo conhecimentos.
-            </p>
-
-            <div class="skills-grid">
-
-                <div class="skill-card">
-                    <h3>Delphi</h3>
-                    <p>VCL • FireMonkey • APIs • CRUD</p>
-                </div>
-
-                <div class="skill-card">
-                    <h3>SQL</h3>
-                    <p>SQL Server • PostgreSQL • Queries • Procedures</p>
-                </div>
-
-                <div class="skill-card">
-                    <h3>Python</h3>
-                    <p>Análise de dados • Pandas • ETL • Jupyter</p>
-                </div>
-
-                <div class="skill-card">
-                    <h3>C#</h3>
-                    <p>.NET • ASP.NET MVC • APIs</p>
-                </div>
-
-                <div class="skill-card">
-                    <h3>JavaScript</h3>
-                    <p>Fundamentos • DOM • Lógica de programação</p>
-                </div>
-
-                <div class="skill-card">
-                    <h3>Git & GitHub</h3>
-                    <p>Versionamento • Repositórios • Projetos</p>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- PROJETOS -->
-
-        <section id="projetos" class="section">
-
-            <div class="section-title">
-                <span>03.</span>
-                <h2>Projetos</h2>
-            </div>
-
-            <p class="section-description">
-                Alguns projetos desenvolvidos durante meus estudos
-                e experiências práticas.
-            </p>
 
 
             <div class="projects-grid">
@@ -270,33 +126,48 @@ const developer = {
 
                 <article class="project-card">
 
-                    <div class="project-top">
-                        <span class="folder">📁</span>
+                    <div class="project-image">
 
-                        <a 
-                            href="https://github.com/SEU_USUARIO/lh-nautical"
-                            target="_blank"
-                        >
-                            GitHub ↗
-                        </a>
+                        <img
+                            src="images/projeto-nautical.png"
+                            alt="Projeto LH Nautical">
+
+                        <div class="project-overlay">
+
+                            <a href="#" target="_blank">
+                                GitHub ↗
+                            </a>
+
+                        </div>
+
                     </div>
 
-                    <h3>
-                        LH Nautical — Data Engineering
-                    </h3>
+                    <div class="project-content">
 
-                    <p>
-                        Projeto de engenharia e análise de dados envolvendo
-                        carregamento de dados, tratamento de arquivos CSV,
-                        PostgreSQL, consultas SQL, análise de clientes,
-                        previsão de demanda e sistema de recomendação.
-                    </p>
+                        <p class="project-number">
+                            01 — DATA ENGINEERING
+                        </p>
 
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>PostgreSQL</span>
-                        <span>SQL</span>
-                        <span>Pandas</span>
+                        <h3>
+                            LH Nautical
+                        </h3>
+
+                        <p>
+                            Projeto de engenharia e análise de dados envolvendo
+                            tratamento de dados, PostgreSQL, consultas SQL,
+                            análise exploratória e visualização.
+                        </p>
+
+                        <div class="technologies">
+
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>PostgreSQL</span>
+                            <span>SQL</span>
+                            <span>Power BI</span>
+
+                        </div>
+
                     </div>
 
                 </article>
@@ -306,31 +177,47 @@ const developer = {
 
                 <article class="project-card">
 
-                    <div class="project-top">
-                        <span class="folder">📁</span>
+                    <div class="project-image">
 
-                        <a 
-                            href="https://github.com/SEU_USUARIO/projeto-mvc"
-                            target="_blank"
-                        >
-                            GitHub ↗
-                        </a>
+                        <img
+                            src="images/projeto-contatos.png"
+                            alt="Sistema de contatos desenvolvido em C#">
+
+                        <div class="project-overlay">
+
+                            <a href="#" target="_blank">
+                                GitHub ↗
+                            </a>
+
+                        </div>
+
                     </div>
 
-                    <h3>
-                        Sistema de Contatos
-                    </h3>
+                    <div class="project-content">
 
-                    <p>
-                        Aplicação web desenvolvida para praticar conceitos
-                        de C#, .NET e arquitetura MVC, incluindo cadastro
-                        e gerenciamento de contatos.
-                    </p>
+                        <p class="project-number">
+                            02 — BACK-END
+                        </p>
 
-                    <div class="project-tags">
-                        <span>C#</span>
-                        <span>.NET</span>
-                        <span>ASP.NET MVC</span>
+                        <h3>
+                            Sistema de Contatos
+                        </h3>
+
+                        <p>
+                            Aplicação web desenvolvida para cadastro,
+                            edição, consulta e exclusão de contatos,
+                            utilizando arquitetura MVC.
+                        </p>
+
+                        <div class="technologies">
+
+                            <span>C#</span>
+                            <span>.NET</span>
+                            <span>ASP.NET MVC</span>
+                            <span>Entity Framework</span>
+
+                        </div>
+
                     </div>
 
                 </article>
@@ -340,32 +227,46 @@ const developer = {
 
                 <article class="project-card">
 
-                    <div class="project-top">
-                        <span class="folder">📁</span>
+                    <div class="project-image">
 
-                        <a 
-                            href="https://github.com/SEU_USUARIO"
-                            target="_blank"
-                        >
-                            GitHub ↗
-                        </a>
+                        <img
+                            src="images/projeto-javascript.png"
+                            alt="Projetos desenvolvidos em JavaScript">
+
+                        <div class="project-overlay">
+
+                            <a href="#" target="_blank">
+                                GitHub ↗
+                            </a>
+
+                        </div>
+
                     </div>
 
-                    <h3>
-                        Projetos JavaScript
-                    </h3>
+                    <div class="project-content">
 
-                    <p>
-                        Coleção de projetos e desafios desenvolvidos durante
-                        meus estudos de JavaScript, trabalhando lógica de
-                        programação, funções, estruturas condicionais e
-                        manipulação de dados.
-                    </p>
+                        <p class="project-number">
+                            03 — JAVASCRIPT
+                        </p>
 
-                    <div class="project-tags">
-                        <span>JavaScript</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
+                        <h3>
+                            Projetos JavaScript
+                        </h3>
+
+                        <p>
+                            Coleção de pequenos projetos e desafios
+                            desenvolvidos para praticar lógica de programação,
+                            funções, condicionais e manipulação de dados.
+                        </p>
+
+                        <div class="technologies">
+
+                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+
+                        </div>
+
                     </div>
 
                 </article>
@@ -375,31 +276,47 @@ const developer = {
 
                 <article class="project-card">
 
-                    <div class="project-top">
-                        <span class="folder">📁</span>
+                    <div class="project-image">
 
-                        <a 
-                            href="https://github.com/SEU_USUARIO"
-                            target="_blank"
-                        >
-                            GitHub ↗
-                        </a>
+                        <img
+                            src="images/projeto-datascience.png"
+                            alt="Projeto de Data Science">
+
+                        <div class="project-overlay">
+
+                            <a href="#" target="_blank">
+                                GitHub ↗
+                            </a>
+
+                        </div>
+
                     </div>
 
-                    <h3>
-                        Projetos de Data Science
-                    </h3>
+                    <div class="project-content">
 
-                    <p>
-                        Projetos desenvolvidos durante meus estudos de
-                        Ciência de Dados, explorando Python, análise,
-                        tratamento e visualização de dados.
-                    </p>
+                        <p class="project-number">
+                            04 — DATA SCIENCE
+                        </p>
 
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>Pandas</span>
-                        <span>Data Science</span>
+                        <h3>
+                            Projetos de Data Science
+                        </h3>
+
+                        <p>
+                            Projetos desenvolvidos durante os estudos de
+                            Ciência de Dados, explorando análise de dados,
+                            Python, bibliotecas e modelos de machine learning.
+                        </p>
+
+                        <div class="technologies">
+
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>NumPy</span>
+                            <span>Machine Learning</span>
+
+                        </div>
+
                     </div>
 
                 </article>
@@ -409,71 +326,73 @@ const developer = {
         </section>
 
 
-        <!-- FORMAÇÃO -->
+        <!-- ================= SOBRE ================= -->
 
-        <section id="formacao" class="section">
+        <section class="about section" id="sobre">
 
-            <div class="section-title">
-                <span>04.</span>
-                <h2>Formação & Aprendizado</h2>
+            <div class="about-image">
+
+                <div class="about-frame">
+
+                    <div class="about-placeholder">
+                        &lt; / &gt;
+                    </div>
+
+                </div>
+
+                <div class="about-number">
+                    01
+                </div>
+
             </div>
 
 
-            <div class="timeline">
+            <div class="about-content">
 
-                <div class="timeline-item">
+                <p class="section-label">
+                    SOBRE MIM
+                </p>
 
-                    <span class="timeline-date">
-                        Formação
-                    </span>
+                <h2>
+                    Desenvolvedora,
+                    <span>curiosa por natureza.</span>
+                </h2>
 
-                    <h3>
-                        Análise e Desenvolvimento de Sistemas
-                    </h3>
+                <p>
+                    Sou desenvolvedora de software com experiência no
+                    desenvolvimento e manutenção de sistemas, principalmente
+                    utilizando Delphi e SQL.
+                </p>
 
-                    <p>
-                        Formação superior na área de tecnologia,
-                        com foco em desenvolvimento de software,
-                        banco de dados e fundamentos de sistemas.
-                    </p>
+                <p>
+                    Atualmente também venho expandindo meus conhecimentos
+                    em C#, .NET, Python, Ciência de Dados e tecnologias
+                    relacionadas à área de tecnologia.
+                </p>
 
-                </div>
-
-
-                <div class="timeline-item">
-
-                    <span class="timeline-date">
-                        Cursos
-                    </span>
-
-                    <h3>
-                        Desenvolvimento & Dados
-                    </h3>
-
-                    <p>
-                        Estudos e projetos envolvendo Python, Ciência de
-                        Dados, JavaScript, C#, .NET, SQL e desenvolvimento
-                        de aplicações.
-                    </p>
-
-                </div>
+                <p>
+                    Gosto de entender como as coisas funcionam, encontrar
+                    problemas e transformar necessidades em soluções
+                    práticas.
+                </p>
 
 
-                <div class="timeline-item">
+                <div class="about-stats">
 
-                    <span class="timeline-date">
-                        Atualmente
-                    </span>
+                    <div>
+                        <strong>+</strong>
+                        <span>Projetos</span>
+                    </div>
 
-                    <h3>
-                        Cibersegurança
-                    </h3>
+                    <div>
+                        <strong>SQL</strong>
+                        <span>Experiência</span>
+                    </div>
 
-                    <p>
-                        Estudos em redes, fundamentos de segurança,
-                        infraestrutura e cibersegurança, buscando ampliar
-                        minha atuação na área de tecnologia.
-                    </p>
+                    <div>
+                        <strong>∞</strong>
+                        <span>Curiosidade</span>
+                    </div>
 
                 </div>
 
@@ -482,44 +401,229 @@ const developer = {
         </section>
 
 
-        <!-- CONTATO -->
+        <!-- ================= TECNOLOGIAS ================= -->
 
-        <section id="contato" class="section contact">
+        <section class="technologies-section section" id="tecnologias">
 
-            <div class="section-title">
-                <span>05.</span>
-                <h2>Vamos conversar?</h2>
+            <div class="section-header">
+
+                <p class="section-label">
+                    STACK
+                </p>
+
+                <h2>
+                    Tecnologias que fazem parte da minha
+                    <span>jornada.</span>
+                </h2>
+
             </div>
 
-            <p>
-                Estou sempre aberta a conhecer novos projetos,
-                oportunidades e pessoas da área de tecnologia.
-            </p>
 
-            <div class="contact-buttons">
+            <div class="tech-grid">
 
-                <a
-                    href="https://www.linkedin.com/in/kelly-vencionek/"
-                    target="_blank"
-                    class="button primary"
-                >
-                    LinkedIn
-                </a>
+                <div class="tech-item">
+                    <div class="tech-icon">D</div>
+                    <h3>Delphi</h3>
+                    <p>VCL · FireMonkey</p>
+                </div>
 
-                <a
-                    href="https://github.com/KVentionek"
-                    target="_blank"
-                    class="button secondary"
-                >
-                    GitHub
-                </a>
+                <div class="tech-item">
+                    <div class="tech-icon">C#</div>
+                    <h3>C# / .NET</h3>
+                    <p>ASP.NET · MVC</p>
+                </div>
 
-                <a
-                    href="mailto:kvencionek@email.com"
-                    class="button secondary"
-                >
-                    E-mail
-                </a>
+                <div class="tech-item">
+                    <div class="tech-icon">Py</div>
+                    <h3>Python</h3>
+                    <p>Data Science · Pandas</p>
+                </div>
+
+                <div class="tech-item">
+                    <div class="tech-icon">SQL</div>
+                    <h3>SQL</h3>
+                    <p>SQL Server · PostgreSQL</p>
+                </div>
+
+                <div class="tech-item">
+                    <div class="tech-icon">JS</div>
+                    <h3>JavaScript</h3>
+                    <p>HTML · CSS</p>
+                </div>
+
+                <div class="tech-item">
+                    <div class="tech-icon">API</div>
+                    <h3>APIs</h3>
+                    <p>REST · JSON</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FORMAÇÃO ================= -->
+
+        <section class="education section" id="formacao">
+
+            <div class="section-header">
+
+                <p class="section-label">
+                    APRENDIZADO
+                </p>
+
+                <h2>
+                    Sempre
+                    <span>aprendendo.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span>
+                            Formação
+                        </span>
+
+                        <h3>
+                            Análise e Desenvolvimento de Sistemas
+                        </h3>
+
+                        <p>
+                            Formação voltada ao desenvolvimento de software,
+                            lógica de programação, banco de dados e engenharia
+                            de sistemas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span>
+                            Estudos
+                        </span>
+
+                        <h3>
+                            Ciência de Dados
+                        </h3>
+
+                        <p>
+                            Estudos envolvendo Python, análise de dados,
+                            bibliotecas de Data Science e Machine Learning.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span>
+                            Atualmente
+                        </span>
+
+                        <h3>
+                            C# e .NET
+                        </h3>
+
+                        <p>
+                            Aprofundando conhecimentos em desenvolvimento
+                            back-end, ASP.NET, APIs, MVC e Entity Framework.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span>
+                            Estudos complementares
+                        </span>
+
+                        <h3>
+                            Cybersecurity
+                        </h3>
+
+                        <p>
+                            Conhecimentos em redes, segurança da informação
+                            e fundamentos de cybersecurity.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTATO ================= -->
+
+        <section class="contact section" id="contato">
+
+            <div class="contact-box">
+
+                <p class="section-label">
+                    CONTATO
+                </p>
+
+                <h2>
+                    Vamos construir algo
+                    <span>juntos?</span>
+                </h2>
+
+                <p>
+                    Estou sempre aberta a conversar sobre tecnologia,
+                    projetos e novas oportunidades.
+                </p>
+
+                <div class="contact-buttons">
+
+                    <a
+                        href="https://github.com/KVentionek"
+                        target="_blank"
+                        class="button primary">
+
+                        GitHub ↗
+
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/kelly-vencionek/"
+                        target="_blank"
+                        class="button secondary">
+
+                        LinkedIn ↗
+
+                    </a>
+
+                </div>
 
             </div>
 
@@ -528,16 +632,16 @@ const developer = {
     </main>
 
 
-    <!-- RODAPÉ -->
+    <!-- ================= FOOTER ================= -->
 
     <footer>
 
         <p>
-            Desenvolvido por <strong>Kelly Vencionek</strong>
+            Desenvolvido por <strong>Kelly Vencionek</strong> ♥
         </p>
 
         <p>
-            HTML • CSS • JavaScript • GitHub Pages
+            © <span id="year"></span>
         </p>
 
     </footer>
@@ -546,4 +650,5 @@ const developer = {
     <script src="script.js"></script>
 
 </body>
+
 </html>

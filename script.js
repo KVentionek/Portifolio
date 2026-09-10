@@ -1,17 +1,78 @@
+// ===============================
+// MENU MOBILE
+// ===============================
+
 const menuButton = document.getElementById("menu-button");
-const navLinks = document.querySelector(".nav-links");
+const navMenu = document.getElementById("nav-menu");
 
 menuButton.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+
+    navMenu.classList.toggle("active");
+
 });
 
 
-const links = document.querySelectorAll(".nav-links a");
+// Fecha o menu quando clicar em algum link
 
-links.forEach(link => {
+const navLinks = document.querySelectorAll("#nav-menu a");
+
+navLinks.forEach(link => {
 
     link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
+
+        navMenu.classList.remove("active");
+
     });
+
+});
+
+
+// ===============================
+// ANO DO FOOTER
+// ===============================
+
+const year = document.getElementById("year");
+
+year.textContent = new Date().getFullYear();
+
+
+// ===============================
+// ANIMAÇÃO AO ENTRAR NA TELA
+// ===============================
+
+const elements = document.querySelectorAll(
+    ".project-card, .tech-item, .timeline-item"
+);
+
+const observer = new IntersectionObserver(
+    entries => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.1
+    }
+);
+
+
+elements.forEach(element => {
+
+    element.style.opacity = "0";
+
+    element.style.transform = "translateY(30px)";
+
+    element.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+
+    observer.observe(element);
 
 });
