@@ -566,7 +566,20 @@ button {
 
     letter-spacing: 2px;
 
+    margin: 0;
+
     margin-bottom: 8px;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-year {
+    font-size: 0.9rem;
+    opacity: 0.7;
 }
 
 .project-content h3 {
